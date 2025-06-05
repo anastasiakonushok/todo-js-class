@@ -1,0 +1,103 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e0f7fa; /* Light Cyan background */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.todo-app-container {
+  background-color: #fff;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+h1 {
+  color: #26a69a; /* Teal heading */
+  margin-bottom: 30px;
+}
+
+.input-area {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 15px;
+  border: 2px solid #b2dfdb; /* Light Teal border */
+  border-radius: 8px 0 0 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border-color: #26a69a; /* Darker Teal on focus */
+  box-shadow: 0 0 5px rgba(38, 166, 154, 0.5);
+}
+
+button {
+  background-color: #26a69a; /* Teal button */
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00897b; /* Darker Teal on hover */
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-list li {
+  background-color: #f0f0f0; /* Light gray list item */
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between text and button */
+}
+
+.todo-list li:nth-child(even) {
+  background-color: #e8e8e8; /* Slightly different gray for even items */
+}
+
+.todo-list li.completed {
+  text-decoration: line-through;
+  color: #777;
+  background-color: #d3d3d3; /* Lighter gray for completed items */
+}
+
+.todo-list li button {
+  background-color: #4caf50; /* Green button for "Complete" */
+  color: white;
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.todo-list li button:hover {
+  background-color: #43a047; /* Darker green on hover */
+}
+
+.todo-list li button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 4px rgba(76, 175, 80, 0.7); /* Add a subtle focus shadow */
+}
